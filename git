@@ -66,3 +66,40 @@ git status
 git commit -m "sample commit"
 git status
 git push
+
+=======================
+mkdir dir1
+git status
+cd dir1
+touch f1 f2 f3
+cd ..
+
+or
+
+touch dir1/f1
+
+git status
+git add .
+git status
+git commit -m "smaple dir"
+git push
+
+============================
+
+ls
+rm file1
+git status
+git add file1
+git status
+git commit -m "sample commit"
+git status
+git log
+git push
+=================
+
+rm -rf dir1
+ls
+git status
+git add .
+git commit -m "sample commit"
+git push
