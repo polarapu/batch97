@@ -1,0 +1,68 @@
+git init  (to intilize empty git repo)
+
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+
+git config --list
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+===============
+
+touch file1
+
+ls
+
+touch file2 file3
+ls
+
+
+Phases
+=======
+1) Workspace
+2) Staging/index
+3) Local repo
+
+====================
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "label" file1
+git status
+git log
+git show
+git show cid
+
+-------------------
+touch file2 file3 file4 file5
+ls
+git status
+git add file2 file3 file4 file5
+or
+git add .
+or
+git add *
+or
+git add -A
+
+git commit -m "label" 
+
+git log
+git show
+
+=====================
+git clone https://github.com/polarapu/batch97.git
+ls
+cd batch97
+ls
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "sample commit"
+git status
+git push
