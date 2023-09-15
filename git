@@ -1,50 +1,50 @@
-git init  (to intilize empty git repo)
-
-git config --global user.name "Polarapu Prasad"
-git config --global user.email "devopstraining2015@gmail.com"
-
-git config --list
-
+gitfdf dgfinit  (to intilize empty git repo)
+g
+gfbit config --global user.name "Polarapu Prasad"
+gitgfb config --global user.email "devopstraining2015@gmail.com"
+g
+gbgit config --list
+b
 git config --global --unset user.name
-git config --global --unset user.email
+gbsgit config --global --unset user.email
+bgsnshgnhg
+==========b=====
+sg
+tobuch file1
+sbf
+lssbf
 
-===============
-
-touch file1
-
-ls
-
-touch file2 file3
-ls
-
-
-Phases
-=======
-1) Workspace
-2) Staging/index
-3) Local repo
-
-====================
-touch file1
-ls
-git status
-git add file1
-git status
-git commit -m "label" file1
-git status
-git log
-git show
-git show cid
-
--------------------
-touch file2 file3 file4 file5
-ls
-git status
-git add file2 file3 file4 file5
-or
-git add .
-or
-git add *
+touchf file2 file3
+lsb
+y
+u
+Pjuyhases
+====k===
+1) Wourkspace
+2) Staaging/index
+3) Locarl repo
+gtyh
+====nyth================
+touch fibgvcdle1
+lsx
+gitjuhy status
+git addtgrfed file1
+git statuss
+git commit mjnhb-m "label" file1
+git statusgvfcdxyjugtref
+git logds
+git showjut
+git show cirhgefdd
+s
+-j------------------
+tohgtfruch file2 file3 file4 file5
+lsde
+git nstatus
+git aghbdd file2 file3 file4 file5
+ordf
+git gsadd .
+orgh
+git badd *
 or
 git add -A
 
