@@ -228,43 +228,91 @@ git cmt
 git config --global --unset alias.cl  (to unset alias)
 
 
+Conflicts
+=========
+git merge --abort
 
 
+Tags
+====
+git tag
+git tag T-1.0
+git show T-1.0
+git tag -d T-1.0
+git tag -d T-1.0 T-2.0
+
+git tag T-1.0 cid
+
+git push origin -d T-1.0
+
+git push origin -d T-2.0 T-3.0 T-4.0
+
+=======================================
+
+Cherry-pick
+===========
+git cherry-pick cid
+
+RESET
+=====
+git add file1  (workspace to staging)
+git reset head file1  (staging to workspace)
+
+git commit -m "Lable" (staging to local)
+git reset --soft cid  (loal to staging)
+
+git reset --mixed cid  (local to workspace)
+
+git reset --hard cid (to delete commit and commit files)
+
+=================
+
+Logs
+=====
+git log
+git log -n
+git log --oneline
+git log --oneline -n
+git log --author=Prasad
+git log --author=Prasad -n
+git log --author=Prasad --oneline
+git log --author=Prasad --oneline -n
+
+git log --since=dd-mm-yy
+or
+git log --after=dd-mm-yy
+
+git log --until=dd-mm-yy
+or
+git log --before=dd-mm-yy
+
+git log --since=dd-mm-yy --until=dd-mm-yy
+or
+git log --after=dd-mm-yy --before=dd-mm-yy
+
+git log --since="yy-mm-dd 12:00" --until="yy-mm-dd 23:00" 
+or
+git log --after="yy-mm-dd 12:00" --before="yy-mm-dd 23:00"
+
+git log --grep=label
+
+git log -- file name
+
+===================
+revert
+=======
+git revert cid
 
 
+amend
+=====
+git commit --amend -m "Label"
 
+commit
+======
+git commit -m "label1" -m "label2" -m "label3"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+git diff
+git merge vs rebase
+git fetch
+git stash
